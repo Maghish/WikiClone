@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Sorry!</h1>
+    {% if error_type == 1 %}
+      <div>
+        <p>No results found called "{{ error_entry }}". Try again!</p>
+      </div>
+    {% else %}
+      <div>
+        <p>{{ error_entry }} page already exists! better try again later or find a different name!</p>
+      </div>
+    {% endif %}
+    
+      
+
+    
+{% endblock %}
